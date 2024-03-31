@@ -1,0 +1,198 @@
+#root {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom right, #4b5320, #000);
+}
+
+.heading{
+  margin-bottom: 80px;
+  font-size: 3rem;
+}
+.heading span{
+  color: #000;}
+
+.Competencias-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  filter: none;
+  
+}
+.card {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  filter: none;
+  background-color: transparent;
+  width: 350px;
+  height: 250px;
+  border-radius: 32px;
+  border: transparent;
+  box-shadow: 0 20px 40px -10px rgba(var(--bg-color));
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+  margin: 18px;
+}
+
+.card:hover {
+  transform: translate3d(0px, 0px, -250px);
+}
+.Competencias-box{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  filter: none;
+}
+.Competencias-container .card:hover .Competencias-box {
+  transform: rotateY(180deg);
+}
+.Competencias-container .card:hover .Competencias-box .descricao{
+  display: none;
+}
+.Competencias-container .Competencias-box h3{
+  color: var(--bg-color);
+}
+.Competencias-container .Competencias-box:hover{
+  border-color: transparent;
+  transform: scale(1.02);
+}
+.Competencias-box h3{
+  font-size: 40px;
+}
+.card-front, 
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 32px;
+  border: transparent;
+}
+.card-front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  object-fit: cover;
+}
+.card-back {
+  background: linear-gradient(to right, var(--second-bg-color), #22303a);    
+  box-shadow: 0 5px 20px #555b32bf;
+  transform: rotateY(180deg);
+  background-color: #202b349b;
+}
+.card-back h1 {
+  color: #fff;
+  font-size: 3rem;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.descricao {
+  position: absolute; 
+  top: 85%; 
+  left: 10%; 
+  width: 100%; 
+  padding: 10px;  
+  color: #fff; 
+  display: flex; 
+  margin-bottom: 20%;
+}
+.descricao h3{
+  font-size: 26px;
+}
+
+button {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 10px;
+  background-color: #95ac12;
+  color: #fff;
+}
+
+/* Estilo para a janela Modal */
+
+.Modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 50%;
+  max-width: 90%;
+  background-color: #082b03;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.96);
+}
+
+.Modal h2{
+ justify-content: center;
+ display: flex;
+}
+
+/* Estilo do conteúdo da modal */
+.modal-content {
+  text-align: center;
+}
+
+
+.inputmodal {
+  display: grid;
+  margin: 20px;
+  
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #011302be;
+  width: 70%;
+  height: 5%;
+}
+
+.inputmodalimg {
+  display: grid;
+  margin: 20px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.buttonmodal {
+  margin-left: 5%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.upload-button {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.upload-button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
