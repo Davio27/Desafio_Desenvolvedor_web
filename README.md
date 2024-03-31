@@ -93,4 +93,4 @@ Certifique-se de ter o Node.js e o npm (ou yarn) instalados em sua máquina.
 
 ### Licença
 
-[Licença] - [URL da Licença]
+[Licença](https://github.com/Davio27/Desafio_Desenvolvedor_web/blob/main/LICENSE)
